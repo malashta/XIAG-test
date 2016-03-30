@@ -9,7 +9,7 @@
  * twitter @SergeTallerr
  * skype: Serge.tallerr
  */
-$db = array(
+$connect = array(
     'db' => array(
         'host' => 'localhost',
         'name' => 'xiag',
@@ -17,4 +17,13 @@ $db = array(
         'password' => '',
         'charset' => 'utf8'
     ),
+
+//$db = new PDO(
+//    "mysql:
+//    host=".$connect['db']['host'].";
+//    dbname=".$connect['db']['name'].";
+//    charset=".$connect['db']['charset']."",
+//    $connect['db']['user'],
+//    $connect['db']['password']
+//)
 );
