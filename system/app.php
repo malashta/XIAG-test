@@ -14,21 +14,13 @@
 class App
 {
 
-
     public function __construct()
     {
+
     }
 
     public function gen_name(){
         return $this->__gen(10);
-    }
-
-    public function get_link_from_base($url){
-
-    }
-
-    public function set_name_to_base($url){
-
     }
 
     private function __gen($cnt){

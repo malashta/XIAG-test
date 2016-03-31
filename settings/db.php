@@ -9,21 +9,19 @@
  * twitter @SergeTallerr
  * skype: Serge.tallerr
  */
-$connect = array(
-    'db' => array(
+$connect =
+     array(
         'host' => 'localhost',
         'name' => 'xiag',
         'user' => 'root',
         'password' => '',
         'charset' => 'utf8'
-    ),
+    );
 
-//$db = new PDO(
-//    "mysql:
-//    host=".$connect['db']['host'].";
-//    dbname=".$connect['db']['name'].";
-//    charset=".$connect['db']['charset']."",
-//    $connect['db']['user'],
-//    $connect['db']['password']
-//)
+$db = new PDO(
+    "mysql:host=".$connect['host'].";
+    dbname=".$connect['name'].";
+    charset=".$connect['charset']."",
+    $connect['user'],
+    $connect['password']
 );

@@ -7,9 +7,9 @@
     <title>XIAG test task</title>
 </head>
 <body>
-<div class="content">
+<div class="content" ng-app="xiag" ng-controller="frontPage">
     <header>URL shortener</header>
-    <form>
+    <form ng-submit="submit()">
         <table>
             <tbody>
             <tr>
@@ -18,16 +18,19 @@
             </tr>
             <tr>
                 <td>
-                    <input type="url" name="url">
+                    <input type="url" ng-model="url">
                     <input type="submit" value="Do!">
                 </td>
-                <td id="result">
+                <td>
+                    {{ resultUrl }}
                 </td>
             </tr>
             </tbody>
         </table>
     </form>
 </div>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/angular-route/angular-route.min.js"></script>
 <script src="/scripts/main.js"></script>
 </body>
 </html>
