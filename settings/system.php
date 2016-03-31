@@ -11,6 +11,6 @@
  */
 $config = array(
     'main' => array(
-        'domain' => 'xiag.com'
+        'domain' => 'xiag.name'
     )
 );
